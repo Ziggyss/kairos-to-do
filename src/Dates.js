@@ -6,11 +6,11 @@ import "react-datepicker/dist/react-datepicker.css";
 const Dates = () => {
   const [date, setDate] = useState(new Date());
 
-  const onChange = (date) => {
+  const onDateChange = (date) => {
     setDate(date);
   };
 
-  const onFormSubmit = (e) => {
+  const onDateFormSubmit = (e) => {
     e.preventDefault();
     console.log(date);
   };
@@ -20,12 +20,12 @@ const Dates = () => {
       <form >
         <DatePicker
           selected={date}
-          onChange={onChange}
+          onChange={onDateChange}
           value={date}
           dateFormat="dd/MM/yyyy"
         />
       </form>
-      <button onClick={onFormSubmit}>Date</button>
+      <button onClick={onDateFormSubmit}>Date</button>
     </div>
   );
 };

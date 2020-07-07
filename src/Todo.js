@@ -7,7 +7,7 @@ const Todo = ({ todo, index, completeTodo, deleteTodo }) => {
       style={{ textDecoration: todo.isComplete ? "line-through" : "" }}
     >
       {todo.text}
-
+      Due by: {todo.date}
       <div>
         <button onClick={() => completeTodo(index)}>Complete</button>
         <button onClick={() => deleteTodo(index)}>X</button>
