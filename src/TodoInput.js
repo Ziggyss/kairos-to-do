@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Dates from "./Dates";
 
 const TodoInput = ({ addTodo }) => {
   const [value, setValue] = useState("");
@@ -11,7 +12,7 @@ const TodoInput = ({ addTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <input
         type="text"
         className="input"
@@ -19,6 +20,8 @@ const TodoInput = ({ addTodo }) => {
         onChange={(e) => setValue(e.target.value)}
         placeholder="Add Todo"
       />
+      <Dates />
+      <button onClick={handleSubmit}>Submit</button>
     </form>
   );
 };

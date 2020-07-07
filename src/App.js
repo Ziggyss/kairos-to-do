@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Todo from "./Todo";
 import TodoInput from "./TodoInput";
+// import Dates from "./Dates";
 
 import "./App.css";
 
@@ -22,11 +23,11 @@ function App() {
     setTodos(newTodos);
   };
 
-  const deleteTodo = index => {
+  const deleteTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
-  }
+  };
 
   return (
     <div className="App">
@@ -45,6 +46,7 @@ function App() {
             />
           ))}
           <TodoInput addTodo={addTodo} />
+          {/* <Dates /> */}
         </div>
       </header>
     </div>
