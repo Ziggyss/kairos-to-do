@@ -34,7 +34,6 @@ function App() {
   };
 
   const completeTodo = (index) => {
-    debugger;
     const newTodos = [...todos];
     newTodos[index].isComplete = !newTodos[index].isComplete;
     const array1 = [];
@@ -60,7 +59,6 @@ function App() {
   };
 
   const updateTodo = (e, index) => {
-    debugger;
     const newTodos = [...todos];
     newTodos[index].text = e.target.value;
     setTodos(newTodos);

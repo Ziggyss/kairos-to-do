@@ -24,7 +24,7 @@ const TodoInput = ({ addTodo }) => {
   };
 
   return (
-    <form className="flex align-center justify-evenly py-3 items-center">
+    <form className="flex align-center justify-between py-3 items-center">
       <input
         type="text"
         className="input shadow appearance-none border rounded w-9/12 py-2 px-3 mr-4 text-grey-darker"
@@ -34,7 +34,7 @@ const TodoInput = ({ addTodo }) => {
       />
       <p className="w-1/12 align-center">Due by: </p>
       <DatePicker
-        className="shadow appearance-none border rounded w-6/12 py-2 px-3 mr-4 text-grey-darker"
+        className="shadow appearance-none border rounded w-8/12 py-2 px-3 mr-4 text-grey-darker"
         selected={date}
         onChange={onDateChange}
         value={date}
