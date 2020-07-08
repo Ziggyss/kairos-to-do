@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 
+
 import "react-datepicker/dist/react-datepicker.css";
 
 const TodoInput = ({ addTodo }) => {
@@ -11,15 +12,14 @@ const TodoInput = ({ addTodo }) => {
     setDate(date);
   };
 
-  //   const onDateFormSubmit = (e) => {
-  //     e.preventDefault();
-  //     console.log(date);
-  //   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!value) return;
-    addTodo({ text: value, isComplete: false, date: date.toLocaleDateString('en-BR') });
+    addTodo({
+      text: value,
+      isComplete: false,
+      date: date.toLocaleDateString("en-GB"),
+    });
     setValue("");
     console.log(date);
   };
@@ -39,8 +39,12 @@ const TodoInput = ({ addTodo }) => {
         value={date}
         dateFormat="dd/MM/yy"
       />
-      <button onClick={handleSubmit}>Submit</button>
-      {/* <button onClick={onDateFormSubmit}>Date</button> */}
+      <button
+        className="flex-no-shrink p-2 border-2 rounded text-teal-500 border-teal hover:text-white hover:bg-teal"
+        onClick={handleSubmit}
+      >
+        Submit
+      </button>
     </form>
   );
 };
