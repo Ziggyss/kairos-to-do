@@ -41,7 +41,7 @@ const TodoInput = ({ addTodo }) => {
         dateFormat="dd/MM/yy"
       />
       <button
-        className="flex-no-shrink p-2 border-2 rounded text-teal-500 border-teal hover:text-white hover:bg-teal-500"
+        className="flex-no-shrink p-2 border-2 rounded text-teal-500 border-teal-500 hover:text-white hover:bg-teal-500"
         onClick={handleSubmit}
       >
         Submit
