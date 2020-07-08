@@ -34,6 +34,7 @@ function App() {
   };
 
   const completeTodo = (index) => {
+    debugger;
     const newTodos = [...todos];
     newTodos[index].isComplete = !newTodos[index].isComplete;
     const array1 = [];
@@ -58,11 +59,18 @@ function App() {
     setTodos(newTodos);
   };
 
+  const updateTodo = (e, index) => {
+    debugger;
+    const newTodos = [...todos];
+    newTodos[index].text = e.target.value;
+    setTodos(newTodos);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Kairos Todo List</h2>
-        <div className="todo-list">
+    <div className="h-screen w-screen flex items-center justify-center bg-teal-100 font-sans">
+      <div className="bg-white w-10/12 rounded shadow p-6 m-4">
+        <h1 className="mb-4 text-3xl text-grey-darkest">Kairos Todo List</h1>
+        <div className="todo-list w-full text-gray-darkest">
           {todos.map((todo, index) => (
             <Todo
               key={index}
@@ -70,12 +78,12 @@ function App() {
               todo={todo}
               completeTodo={completeTodo}
               deleteTodo={deleteTodo}
+              updateTodo={updateTodo}
             />
           ))}
           <TodoInput addTodo={addTodo} />
-          {/* <Dates /> */}
         </div>
-      </header>
+      </div>
     </div>
   );
 }
