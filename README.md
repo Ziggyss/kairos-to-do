@@ -1,6 +1,11 @@
 # Kairos Job Application - Lisa Wilton
 
+![](desktop3.gif)
+
+
+
 Thanks for checking out my Todo App. Here is a brief explanation about the decisions I made during this project:
+
 
 ## Tech Stack - React (with hooks), TailwindCSS, React-easy-flip (later removed)
 
