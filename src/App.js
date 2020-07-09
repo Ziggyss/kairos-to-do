@@ -44,6 +44,7 @@ function App() {
   };
 
   const updateTodo = (e, index) => {
+    e.preventDefault();
     const newTodos = [...todos];
     newTodos[index].text = e.target.value;
     setTodos(newTodos);

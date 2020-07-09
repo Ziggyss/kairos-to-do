@@ -19,7 +19,8 @@ const Todo = ({ todo, index, completeTodo, deleteTodo, updateTodo }) => {
         style={{ borderBottom: "1px solid #a0aec0" }}
         className="flex flex-wrap md:flex-no-wrap items-center justify-between mb-4 py-4"
       >
-        <input
+        <input 
+        data-flip-id="animated-image"
           className="w-full md:w-8/12 py-3"
           style={{
             textDecoration: todo.isComplete ? "line-through" : "",
