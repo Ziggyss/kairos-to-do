@@ -1,26 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faTimes, faTrash } from "@fortawesome/free-solid-svg-icons";
-import { useFlip, easeInOutQuint } from "react-easy-flip";
 
 const Todo = ({ todo, index, completeTodo, deleteTodo, updateTodo }) => {
-  const animationOptions = {
-    duration: 300,
-    easing: easeInOutQuint,
-  };
 
-  const rootId = "rootId";
-
-  useFlip(rootId, animationOptions);
   return (
-    <div data-flip-root-id={rootId}>
+    <div >
       <div
-        data-flip-id="animated-image"
         style={{ borderBottom: "1px solid #a0aec0" }}
         className="flex flex-wrap md:flex-no-wrap items-center justify-between mb-4 py-4"
       >
         <input 
-        data-flip-id="animated-image"
           className="w-full md:w-8/12 py-3"
           style={{
             textDecoration: todo.isComplete ? "line-through" : "",
