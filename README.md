@@ -1,7 +1,16 @@
 # Kairos Job Application - Lisa Wilton
 
 ![](desktop3.gif)
+
+Desktop view of the application
+
+=======================================================================================
+
 ![](mobile2.gif)
+
+Mobile view of the application
+
+=======================================================================================
 
 
 Thanks for checking out my Todo App. Here is a brief explanation about the decisions I made during this project:
