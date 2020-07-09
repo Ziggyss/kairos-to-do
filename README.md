@@ -1,6 +1,7 @@
 # Kairos Job Application - Lisa Wilton
 
 ![](desktop3.gif)
+![](mobile2.gif)
 
 
 Thanks for checking out my Todo App. Here is a brief explanation about the decisions I made during this project:
