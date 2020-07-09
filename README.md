@@ -10,7 +10,9 @@ I didn't feel that Redux was necessary for this project as it's quite small and 
 
 I did decide to learn one new thing through this process, and that was how to use Tailwindcss. It didn't have too much of a learning curve and I'm quite happy with how it turned out - a fairly clean design, but I think I only just scratched the surface with this library.
 
-I implemented some animation with react-easy-flip but I removed it in the end, as I was unable to figure out a way of stopping it animating the list when doing the inline edit on any of the items. I thought it was better to remove it and have no animation at all, rather than having a really annoying animation that appears when using the app to do something that shouldn't cause too much of a visual distraction. 
+I implemented some animation with react-easy-flip but I removed it in the end, as I was unable to figure out a way of stopping it animating the list when doing the inline edit on any of the items. I thought it was better to remove it and have no animation at all, rather than having a really annoying animation that appears when using the app to do something that shouldn't cause too much of a visual distraction.
+
+I added a few simple tests using React-testing-library.
 
 ## Design decisions
 
@@ -19,6 +21,8 @@ I moved the submit section to the bottom of the app, mainly for the mobile view,
 I decided to enable users to toggle the checked items on and off and initially started out with words on buttons to enable this ("Done" and "Not Done") but I didn't like how it looked in the design so I changed these buttons to have icons instead.
 
 I decided to omit a button for inline edit on the items as I wanted this functionality to be as unobtrusive as possible.
+
+I decided to go for a line-through effect on completed items, rather than using a checkbox.
 
 ## Challenges
 

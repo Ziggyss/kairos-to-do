@@ -9,6 +9,8 @@ function App() {
     { text: "Win lottery", isComplete: false, date: "10/07/2020" },
   ]);
 
+
+  // This was my solution for ordering the items by date. Two arrays - one for completed items and one for incomplete items. Sort them both and then place them in a sorted array to render on the screen.
   const sort = (arrayToSort) => {
     var sortedArray = [];
     const array1 = [];
