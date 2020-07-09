@@ -1,4 +1,4 @@
-# Kairos Job Application - Lisa Wilton
+# Kairos Technical Challenge - Lisa Wilton
 
 ![](desktop3.gif)
 
