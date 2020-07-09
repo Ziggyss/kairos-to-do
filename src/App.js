@@ -50,8 +50,8 @@ function App() {
   };
 
   return (
-    <div className="h-full w-screen flex items-center justify-center bg-teal-100 font-sans">
-      <div className="bg-white w-10/12 rounded shadow p-6 m-4">
+    <div className="h-screen w-screen flex items-center bg-teal-100 font-sans overflow-scroll">
+      <div className="m-auto bg-white w-10/12 rounded shadow p-6 m-4">
         <h1 className="mb-4 text-3xl text-grey-darkest">Kairos Todo List</h1>
         <div className="todo-list w-full text-gray-darkest">
           {todos.map((todo, index) => (
