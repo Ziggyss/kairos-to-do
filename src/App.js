@@ -54,16 +54,16 @@ function App() {
       <div className="m-auto bg-white w-10/12 rounded shadow p-6 m-4">
         <h1 className="mb-4 text-3xl text-grey-darkest">Kairos Todo List</h1>
         <div className="todo-list w-full text-gray-darkest">
-          {todos.map((todo, index) => (
-            <Todo
-              key={index}
-              index={index}
-              todo={todo}
-              completeTodo={completeTodo}
-              deleteTodo={deleteTodo}
-              updateTodo={updateTodo}
-            />
-          ))}
+            {todos.map((todo, index) => (
+              <Todo
+                key={index}
+                index={index}
+                todo={todo}
+                completeTodo={completeTodo}
+                deleteTodo={deleteTodo}
+                updateTodo={updateTodo}
+              />
+            ))}
           <TodoInput addTodo={addTodo} />
         </div>
       </div>

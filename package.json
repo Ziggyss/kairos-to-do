@@ -14,6 +14,8 @@
     "react-checkbox-component": "^0.1.15",
     "react-datepicker": "^3.0.0",
     "react-dom": "^16.13.1",
+    "react-easy-flip": "^4.0.0-beta.2",
+    "react-flip-move": "^3.0.4",
     "react-scripts": "3.4.1",
     "tailwindcss": "^1.4.6"
   },
