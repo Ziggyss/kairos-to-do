@@ -24,24 +24,24 @@ const TodoInput = ({ addTodo }) => {
   };
 
   return (
-    <form className="flex align-center justify-between py-3 items-center">
+    <form className="flex flex-wrap md:flex-no-wrap align-center justify-between py-3 items-center">
       <input
         type="text"
-        className="input shadow appearance-none border rounded w-8/12 py-2 px-3 mr-4 text-grey-darker"
+        className="input shadow appearance-none border rounded w-full md:w-8/12 py-2 px-3 mr-0 mb-5 md:mb-0 md:mr-4 text-grey-darker"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Add Todo"
       />
-      <p className="w-16 align-center">Due by: </p>
+      <p className="w-auto md:w-16 align-center">Due by: </p>
       <DatePicker
-        className="shadow appearance-none border rounded w-8/12 py-2 px-3 mr-4 text-grey-darker"
+        className="shadow appearance-none border rounded w-auto md:w-8/12 py-2 px-3 mr-0 md:mr-4 text-grey-darker"
         selected={date}
         onChange={onDateChange}
         value={date}
         dateFormat="dd/MM/yyyy"
       />
       <button
-        className="flex-no-shrink p-2 border-2 rounded text-teal-500 border-teal-500 hover:text-white hover:bg-teal-500"
+        className="flex-no-shrink w-full mt-5 md:mt-0 md:w-auto p-2 border-2 rounded text-teal-500 border-teal-500 hover:text-white hover:bg-teal-500"
         onClick={handleSubmit}
       >
         Submit
