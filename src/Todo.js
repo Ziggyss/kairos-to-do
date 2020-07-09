@@ -20,8 +20,8 @@ const Todo = ({ todo, index, completeTodo, deleteTodo, updateTodo }) => {
           value={todo.text}
           onChange={(e) => updateTodo(e, index)}
         />
-        <p className="text-gray-600">Due by: {todo.date}</p>
-        <div className="w-40">
+        <p className="text-gray-600 hidden md:block">Due by: {todo.date}</p>
+        <div className="w-40 flex justify-end">
           <button
             className={
               todo.isComplete

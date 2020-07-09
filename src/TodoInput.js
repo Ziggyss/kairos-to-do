@@ -27,12 +27,12 @@ const TodoInput = ({ addTodo }) => {
     <form className="flex align-center justify-between py-3 items-center">
       <input
         type="text"
-        className="input shadow appearance-none border rounded w-9/12 py-2 px-3 mr-4 text-grey-darker"
+        className="input shadow appearance-none border rounded w-8/12 py-2 px-3 mr-4 text-grey-darker"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Add Todo"
       />
-      <p className="w-1/12 align-center">Due by: </p>
+      <p className="w-16 align-center">Due by: </p>
       <DatePicker
         className="shadow appearance-none border rounded w-8/12 py-2 px-3 mr-4 text-grey-darker"
         selected={date}
