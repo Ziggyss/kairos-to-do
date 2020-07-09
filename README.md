@@ -3,7 +3,6 @@
 ![](desktop3.gif)
 
 
-
 Thanks for checking out my Todo App. Here is a brief explanation about the decisions I made during this project:
 
 
