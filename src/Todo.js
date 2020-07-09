@@ -7,10 +7,10 @@ const Todo = ({ todo, index, completeTodo, deleteTodo, updateTodo }) => {
     <div>
       <div
         style={{ borderBottom: "1px solid #a0aec0" }}
-        className="flex items-center justify-between mb-4 py-4"
+        className="flex flex-wrap md:flex-no-wrap items-center justify-between mb-4 py-4"
       >
         <input
-          className="w-8/12 py-3"
+          className="w-full md:w-8/12 py-3"
           style={{
             textDecoration: todo.isComplete ? "line-through" : "",
             color: todo.isComplete ? "#38B2AC" : "#2d3748",
@@ -20,8 +20,8 @@ const Todo = ({ todo, index, completeTodo, deleteTodo, updateTodo }) => {
           value={todo.text}
           onChange={(e) => updateTodo(e, index)}
         />
-        <p className="text-gray-600 hidden md:block">Due by: {todo.date}</p>
-        <div className="w-40 flex justify-end">
+        <p className="w-1/2 md:w-40 text-gray-600">Due by: {todo.date}</p>
+        <div className="w-1/2 md:w-40 flex justify-end">
           <button
             className={
               todo.isComplete
