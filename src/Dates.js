@@ -1,33 +1,32 @@
-import React, { useState } from "react";
-import DatePicker from "react-datepicker";
+// import React, { useState } from "react";
+// import DatePicker from "react-datepicker";
 
-import "react-datepicker/dist/react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
 
-const Dates = () => {
-  const [date, setDate] = useState(new Date());
+// const Dates = () => {
+//   const [date, setDate] = useState(new Date());
 
-  const onDateChange = (date) => {
-    setDate(date);
-  };
+//   const onDateChange = (date) => {
+//     setDate(date);
+//   };
 
-  const onDateFormSubmit = (e) => {
-    e.preventDefault();
-    console.log(date);
-  };
+//   const onDateFormSubmit = (e) => {
+//     e.preventDefault();
+//   };
 
-  return (
-    <div>
-      <form >
-        <DatePicker
-          selected={date}
-          onChange={onDateChange}
-          value={date}
-          dateFormat="dd/MM/yyyy"
-        />
-      </form>
-      <button onClick={onDateFormSubmit}>Date</button>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <form >
+//         <DatePicker
+//           selected={date}
+//           onChange={onDateChange}
+//           value={date}
+//           dateFormat="dd/MM/yyyy"
+//         />
+//       </form>
+//       <button onClick={onDateFormSubmit}>Date</button>
+//     </div>
+//   );
+// };
 
-export default Dates;
+// export default Dates;

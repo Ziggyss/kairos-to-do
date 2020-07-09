@@ -20,7 +20,6 @@ const TodoInput = ({ addTodo }) => {
       date: date.toLocaleDateString("en-GB"),
     });
     setValue("");
-    console.log(date);
   };
 
   return (
